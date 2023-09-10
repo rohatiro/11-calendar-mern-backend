@@ -22,6 +22,8 @@ app.use( express.json() );
 // TODO CRUD de eventos
 app.use('/api/auth', require('./routes/auth'));
 
+app.use('/api/events', require('./routes/events'));
+
 app.listen(process.env.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${ process.env.PORT }`)
 });
